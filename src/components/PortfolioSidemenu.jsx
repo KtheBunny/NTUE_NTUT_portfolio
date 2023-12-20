@@ -40,6 +40,8 @@ export default function PortfolioSidemenu() {
 
     return (
         <>
+        
+            {/* 正常靠左版本 */}
             <div className='portsidemenu-base'>
 
                 <Link to='/'>
@@ -65,6 +67,8 @@ export default function PortfolioSidemenu() {
                 <div className='portsidemenu-btn portsidemenu-hoverable'><ThunderboltFilled className='icon'/><span className='portsidemenu-btn-text'>110-期中</span></div>
             </div>
             
+
+            {/* sm時靠上方版本 */}
             <div className='portsidemenu-topMode'>
 
                 <div className='portsidemenu-topMode-base'
@@ -82,7 +86,7 @@ export default function PortfolioSidemenu() {
                     </div>
                 </div>
 
-
+                
                 <div className='portsidemenu-topMode-base'
                     style={ sideMenuTopSearch ? styles.show : styles.hide }
                 >
