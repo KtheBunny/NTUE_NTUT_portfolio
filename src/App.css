@@ -705,6 +705,8 @@
   color: #e77474;
   font-size: 18px;
   width: max-content;
+
+  cursor: pointer;
 }
 
 /* ---------- ----------*/

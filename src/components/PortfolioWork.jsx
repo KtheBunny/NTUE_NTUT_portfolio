@@ -1,4 +1,6 @@
-import { EyeFilled } from '@ant-design/icons';
+import { useState } from 'react';
+
+import { EyeFilled, HeartFilled } from '@ant-design/icons';
 import { FilePptFilled } from '@ant-design/icons';
 import { GithubFilled } from '@ant-design/icons';
 import { HeartOutlined } from '@ant-design/icons';
@@ -6,6 +8,12 @@ import { HeartOutlined } from '@ant-design/icons';
 export default function PortfolioWork({getSchoolIndex}) {
 
     const _schoolIndex = getSchoolIndex; // 0=NTUE 1=NTUT
+
+    const [ heart, setHeart ] = useState(false);
+
+    const heartClick = () => {
+        setHeart(!heart);
+    };
 
     return (
         <div className='portwork-base'>
@@ -53,7 +61,13 @@ export default function PortfolioWork({getSchoolIndex}) {
                             </div>
 
                             {/* 愛心數 */}
-                            <div className='portwork-hearts'><HeartOutlined style={{ paddingRight: '8px' }}/>114514</div>
+                            <div className='portwork-hearts' onClick={heartClick}>
+                                { heart?
+                                    <HeartFilled style={{ paddingRight: '8px' }}/>:
+                                    <HeartOutlined style={{ paddingRight: '8px' }}/>
+                                }
+                                114514
+                            </div>
 
                         </div>
                     </div>
