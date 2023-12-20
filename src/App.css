@@ -240,6 +240,12 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 575px) {
+  .portbar-home-base {
+    font-size: 20px;
+  }
+}
+
 .portbar-home-icon {
   margin-right: 10px;
 }
@@ -428,7 +434,7 @@
   font-weight: 600;
 
   cursor: pointer;
-  
+
   transition: 0.2s;
 }
 

@@ -1,9 +1,8 @@
 # 更新：
 
-Ver1.0.2 2023/12/20 14:33
+Ver1.0.1 2023/12/20
+- 在 html 增加 shrink-to-fit=no 以解決手機顯示時的排版問題
 - 建立 vercel.json 以修復 vercel 在分頁重新整理時出現的 404 Error
-
-Ver1.0.1 2023/12/20 14:10
 - 增加 comment 說明
 
 
