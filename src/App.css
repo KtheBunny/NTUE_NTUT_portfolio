@@ -592,6 +592,7 @@
 
   top: 4px;
   left: 4px;
+  z-index: 1;
   color: #7F9DEB;
 }
 
