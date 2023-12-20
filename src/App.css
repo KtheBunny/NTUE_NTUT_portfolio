@@ -369,6 +369,8 @@
   display: flex;
   justify-content: space-evenly;
   color: white;
+
+  transition: all 1s;
 }
 
 .portsidemenu-search-base input[type=text] {
@@ -425,6 +427,8 @@
   font-size: 20px;
   font-weight: 600;
 
+  cursor: pointer;
+  
   transition: 0.2s;
 }
 
